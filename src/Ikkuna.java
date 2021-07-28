@@ -16,7 +16,7 @@ public class Ikkuna extends JFrame {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-
+	String[] tavat = { "+", "-", "*", "/"};
 	public Ikkuna() {
 		this.setTitle("Mariaporin laskin");
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -27,11 +27,7 @@ public class Ikkuna extends JFrame {
 		num1.setPreferredSize(new Dimension(100,20));
 		JTextField num2 = new JTextField();
 		num2.setPreferredSize(new Dimension(100,20));
-		JComboBox<String> tapa = new JComboBox<String>();
-		tapa.addItem("+");
-		tapa.addItem("-");
-		tapa.addItem("*");
-		tapa.addItem("/");
+		JComboBox<String> tapa = new JComboBox<String>(tavat);
 	    JButton b = new JButton("Laske");
 	    b.setBounds(300 / 2,200 / 2, 30, 10);
 	    b.addActionListener(new ActionListener() {
