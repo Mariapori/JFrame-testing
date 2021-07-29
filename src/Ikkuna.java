@@ -51,7 +51,7 @@ public class Ikkuna extends JFrame {
 	    			break;
 	    		}
 	    		
-	    		JOptionPane.showMessageDialog(null, "Vastaus on " + vastaus);
+	    		JOptionPane.showMessageDialog(null, "Vastaus on " + vastaus, "Vastaus", JOptionPane.PLAIN_MESSAGE);
 	    	}
 	    });
 	    panel.add(num1);
